@@ -10,3 +10,8 @@ newDiv.appendChild(newContent);
 // add the newly created element and its content into the DOM
 const existingDiv = document.getElementById("my-target-element");
 document.body.appendChild(newDiv, existingDiv);
+
+const secondDiv = document.createElement("h3")
+const secondContent = document.createTextNode("hellllooo")
+secondDiv.appendChild(secondContent);
+document.body.appendChild(secondDiv, newDiv);
